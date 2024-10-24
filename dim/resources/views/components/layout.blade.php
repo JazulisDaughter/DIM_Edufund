@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full bg-gray-100">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/app.css')
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>Landing page</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body class="h-full">
-
-    <div class="min-h-full">
-        <x-navbar></x-navbar>
-
-        <x-header>{{ $title }}</x-header>
-        <main>
-            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-              {{ $slot }}
-            </div>
-        </main>
-    </div>
-</body>
-
+    <!DOCTYPE html>
+    <html lang="en" class="h-full scroll-smooth bg-white antialiased">
+      <head>
+        <!-- Meta information for title and description -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TaxPal - Accounting made simple for small businesses</title>
+        <meta name="description" content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.">
+        
+        <!-- Import Google Fonts Inter and Lexend -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap" rel="stylesheet">
+        
+        <!-- Tailwind CSS (assuming you have the file setup) -->
+        <link rel="stylesheet" href="/styles/tailwind.css">
+      </head>
+    
+      <body class="flex h-full flex-col">
+        <!-- Content goes here -->
+        <!-- Replace this with the page content dynamically in the Next.js app -->
+        {{children}}
+    
+      </body>
+    </html>
+    
 </html>

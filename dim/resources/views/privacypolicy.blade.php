@@ -70,118 +70,167 @@
     </div>
 </header>
 
-<div class="bg-white py-24 sm:py-32">
+
+<div class="relative isolate overflow-hidden bg-white py-24 sm:py-32">
+    <div class="absolute -top-80 left-[max(6rem,33%)] -z-10 transform-gpu blur-3xl sm:left-1/2 md:top-20 lg:ml-20 xl:top-3 xl:ml-56"
+        aria-hidden="true">
+        <div class="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+            style="clip-path: polygon(63.1% 29.6%, 100% 17.2%, 76.7% 3.1%, 48.4% 0.1%, 44.6% 4.8%, 54.5% 25.4%, 59.8% 49.1%, 55.3% 57.9%, 44.5% 57.3%, 27.8% 48%, 35.1% 81.6%, 0% 97.8%, 39.3% 100%, 35.3% 81.5%, 97.2% 52.8%, 63.1% 29.6%)">
+        </div>
+    </div>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+            <p class="text-lg font-semibold leading-8 tracking-tight text-blue-600">Deploy faster</p>
+            <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Privacy Policy</h1>
+            <p class="mt-6 text-xl leading-8 text-gray-700">This Privacy Policy outlines how we collect, use, and
+                protect your personal information when you interact with our education support platform. We are
+                committed to safeguarding your privacy and ensuring that your personal data is handled securely and
+                responsibly.</p>
+        </div>
         <div
-            class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            
-            <div class="lg:pr-4">
-                <div
-                    class="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-9 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
-                    <div class="absolute inset-0  mix-blend-multiply"></div>
-                    <div class="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
-                        aria-hidden="true">
-                        <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-40"
-                            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-                        </div>
-                    </div>
-                    <img src="https://student-activity.binus.ac.id/bssc/wp-content/uploads/sites/38/2021/07/1.jpg" alt=""
-                        class="h-auto w-auto">
-                    <figure class="relative isolate">
-                        <svg viewBox="0 0 162 128" fill="none" aria-hidden="true"
-                            class="absolute -left-2 -top-4 -z-10 h-32 stroke-white/20">
-                            <path id="0ef284b8-28c2-426e-9442-8655d393522e"
-                                d="M65.5697 118.507L65.8918 118.89C68.9503 116.314 71.367 113.253 73.1386 109.71C74.9162 106.155 75.8027 102.28 75.8027 98.0919C75.8027 94.237 75.16 90.6155 73.8708 87.2314C72.5851 83.8565 70.8137 80.9533 68.553 78.5292C66.4529 76.1079 63.9476 74.2482 61.0407 72.9536C58.2795 71.4949 55.276 70.767 52.0386 70.767C48.9935 70.767 46.4686 71.1668 44.4872 71.9924L44.4799 71.9955L44.4726 71.9988C42.7101 72.7999 41.1035 73.6831 39.6544 74.6492C38.2407 75.5916 36.8279 76.455 35.4159 77.2394L35.4047 77.2457L35.3938 77.2525C34.2318 77.9787 32.6713 78.3634 30.6736 78.3634C29.0405 78.3634 27.5131 77.2868 26.1274 74.8257C24.7483 72.2185 24.0519 69.2166 24.0519 65.8071C24.0519 60.0311 25.3782 54.4081 28.0373 48.9335C30.703 43.4454 34.3114 38.345 38.8667 33.6325C43.5812 28.761 49.0045 24.5159 55.1389 20.8979C60.1667 18.0071 65.4966 15.6179 71.1291 13.7305C73.8626 12.8145 75.8027 10.2968 75.8027 7.38572C75.8027 3.6497 72.6341 0.62247 68.8814 1.1527C61.1635 2.2432 53.7398 4.41426 46.6119 7.66522C37.5369 11.6459 29.5729 17.0612 22.7236 23.9105C16.0322 30.6019 10.618 38.4859 6.47981 47.558L6.47976 47.558L6.47682 47.5647C2.4901 56.6544 0.5 66.6148 0.5 77.4391C0.5 84.2996 1.61702 90.7679 3.85425 96.8404L3.8558 96.8445C6.08991 102.749 9.12394 108.02 12.959 112.654L12.959 112.654L12.9646 112.661C16.8027 117.138 21.2829 120.739 26.4034 123.459L26.4033 123.459L26.4144 123.465C31.5505 126.033 37.0873 127.316 43.0178 127.316C47.5035 127.316 51.6783 126.595 55.5376 125.148L55.5376 125.148L55.5477 125.144C59.5516 123.542 63.0052 121.456 65.9019 118.881L65.5697 118.507Z" />
-                            <use href="#0ef284b8-28c2-426e-9442-8655d393522e" x="86" />
-                        </svg>
-                        <blockquote class="mt-6 text-xl font-semibold leading-8 text-white">
-                            <p>“Thanks to EdFund, I’m not just learning; I’m reaching for the stars!”</p>
-                        </blockquote>
-                        <figcaption class="mt-6 text-sm leading-6 text-gray-300"><strong
-                                class="font-semibold text-white">Surti Liow,</strong> CEO at Edufund</figcaption>
-                    </figure>
-                </div>
+            class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:mt-10 lg:max-w-none lg:grid-cols-12">
+            <div class="relative lg:order-last lg:col-span-5">
+                <svg class="absolute -top-[40rem] left-1 -z-10 h-[64rem] w-[175.5rem] -translate-x-1/2 stroke-gray-900/10 [mask-image:radial-gradient(64rem_64rem_at_111.5rem_0%,white,transparent)]"
+                    aria-hidden="true">
+                    <defs>
+                        <pattern id="e87443c8-56e4-4c20-9111-55b82fa704e3" width="200" height="200"
+                            patternUnits="userSpaceOnUse">
+                            <path d="M0.5 0V200M200 0.5L0 0.499983" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" stroke-width="0"
+                        fill="url(#e87443c8-56e4-4c20-9111-55b82fa704e3)" />
+                </svg>
+                <figure class="border-l border-blue-600 pl-8">
+                    <blockquote class="text-xl font-semibold leading-8 tracking-tight text-gray-900">
+                        <p>“Privacy is a fundamental right, and it is essential to a free and just society. We must
+                            protect it with the same vigor that we protect our other freedoms.” -Justice Ruth Bader Ginsburg</p>
+                    </blockquote>
+                </figure>
             </div>
-            <div>
-                <div class="text-base leading-7 text-gray-700 lg:max-w-lg">
-                    <p class="text-base font-semibold leading-7 text-blue-600">Company values</p>
-                    <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">How It Works</h1>
-                    <div class="max-w-xl">
-                        <h1 class="text-3xl font-semibold mt-8">Create a Campaign</h1>
-                        <p class="mt-6">
 
-                            Embark on your fundraising journey by establishing a campaign that aligns with your passions
-                            and goals. Whether you're an individual, a group, or a corporation, you have the power to
-                            create a meaningful impact by supporting children in need. Our platform provides a
-                            user-friendly environment for you to create and manage your campaign, ensuring a seamless
-                            experience from start to finish.
-                        </p>
-                        <h1 class="text-3xl font-semibold mt-8">Set Your Goals</h1>
-                        <p class="mt-8">
+            <div class="max-w-xl text-base leading-7 text-gray-700 lg:col-span-7">
+                <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Information collection</h2>
+                <p class="mt-6">We may collect personal information from you, such as your name, email address, phone
+                    number, and address, when you create an account, make a donation, or contact us. This information is
+                    essential for us to process your donations, communicate with you effectively, and provide the
+                    services you expect from our platform.
 
-                            Define your specific fundraising target and the timeframe for your campaign. Setting clear
-                            objectives will help you stay focused, motivated, and accountable throughout the process.
-                            Consider the needs of the children you aim to support and the resources required to achieve
-                            your goals. By setting realistic expectations, you'll increase your chances of success and
-                            maximize the impact of your efforts.</p>
-                        <h1 class="text-3xl font-semibold mt-8">Share Your Story</h1>
-                        <p class="mt-8">
+                    Additionally, we may collect information about your activities on our platform, such as your
+                    browsing history and preferences. This data helps us understand how users interact with our platform
+                    and allows us to improve our services and make them more relevant to your needs.</p>
+                <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Information use</h2>
+                <p class="mt-6">We use your personal information for the following purposes:
 
-                            Craft a compelling narrative that resonates with your audience and inspires them to donate.
-                            Share personal stories, highlight the challenges faced by the children you're supporting,
-                            and emphasize the positive outcomes that your campaign can achieve. A well-crafted story
-                            will evoke emotions and create a strong connection with potential donors, encouraging them
-                            to contribute to your cause.</p>
-                        <h1 class="text-3xl font-semibold mt-8">Collect Donations</h1>
-                        <p class="mt-8">
+                    Processing Donations: We use your information to process your donations and ensure that they are
+                    allocated appropriately to support children's education.
+                    Communication: We may use your contact information to communicate with you about your donations,
+                    updates on the children you are supporting, and other relevant information.
+                    Platform Improvement: We analyze your activities on our platform to identify trends and areas for
+                    improvement. This helps us enhance our services and make them more user-friendly.
+                    Security: We use your information to protect the security of our platform and prevent unauthorized
+                    access or fraudulent activities.
+                </p>
+                <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Information sharing</h2>
+                <p class="mt-6">We may share your personal information with third-party service providers who assist
+                    us in operating our platform, such as payment processors, email marketing services, and data
+                    analytics providers. These third parties are required to maintain the confidentiality of your
+                    information and use it only for the purposes specified by us.
 
-                            Our secure and user-friendly platform makes it easy for donors to contribute to your
-                            campaign. We offer multiple payment options to accommodate different preferences and ensure
-                            a convenient and secure donation process. By providing a seamless experience for donors,
-                            you'll encourage more people to participate and support your cause.</p>
-                        <h1 class="text-3xl font-semibold mt-8">Track Progress</h1>
-                        <p class="mt-8">
-
-                            Monitor your campaign's progress and keep your supporters updated on your achievements.
-                            Sharing updates helps maintain momentum, encourages continued support, and demonstrates the
-                            impact of your efforts. Utilize tracking tools to measure your progress and identify areas
-                            for improvement. By providing transparency and accountability, you'll build trust with
-                            donors and strengthen your campaign's credibility.</p>
-                        <h1 class="text-3xl font-semibold mt-8">Make a Difference</h1>
-                        <p class="mt-8">
-                            Celebrate your success and the positive impact you've made. Your efforts will contribute to
-                            empowering children's futures and creating a brighter world. By supporting education and
-                            providing opportunities for children in need, you're investing in their potential and
-                            helping to build a more equitable society. Reflect on your achievements and the lives you've
-                            touched, and continue to inspire others to join you in making a difference.</p>
-                    </div>
-                </div>
-                <dl class="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4">
-                    <div>
-                        <dt class="text-sm font-semibold leading-6 text-gray-600">Founded</dt>
-                        <dd class="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">2020</dd>
-                    </div>
-                    <div>
-                        <dt class="text-sm font-semibold leading-6 text-gray-600">Donors</dt>
-                        <dd class="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">4,200</dd>
-                    </div>
-                    <div>
-                        <dt class="text-sm font-semibold leading-6 text-gray-600">Kids</dt>
-                        <dd class="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">10,000</dd>
-                    </div>
-                    <div>
-                        <dt class="text-sm font-semibold leading-6 text-gray-600">Raised</dt>
-                        <dd class="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">25M</dd>
-                    </div>
-                </dl>
-                <div class="mt-10 flex">
-                    <a href="/aboutus" class="text-base font-semibold leading-7 text-blue-600">Learn more about our
-                        company <span aria-hidden="true">&rarr;</span></a>
-                </div>
+                    We will not sell or rent your personal information to third parties for marketing purposes. Your
+                    privacy is our top priority, and we will never share your personal data without your consent.
+                </p>
+                <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Data security</h2>
+                <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
+                    <li class="flex gap-x-3">
+                        <svg class="mt-1 h-5 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold text-gray-900">Encryption</strong> We use encryption
+                            technology to protect your data during transmission and storage.
+                        </span>
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="mt-1 h-5 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold text-gray-900">Access controls</strong> We restrict access
+                            to your personal information to authorized personnel only.</span>
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="mt-1 h-5 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
+                            <path fill-rule="evenodd"
+                                d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold text-gray-900">Regular monitoring</strong> We regularly
+                            monitor our systems for security vulnerabilities and take prompt action to address any
+                            issues.</span>
+                    </li>
+                </ul>
+                <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Your rights</h2>
+                <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
+                    <li class="flex gap-x-3">
+                        <svg class="mt-1 h-5 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold text-gray-900">Access and Rectify</strong> You can access
+                            and update your personal information at any time. If you believe that your information is
+                            inaccurate or incomplete, you can request corrections.
+                        </span>
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="mt-1 h-5 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold text-gray-900">Object to Processing</strong> You may object
+                            to the processing of your personal information for certain purposes, such as marketing or
+                            profiling.</span>
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg class="mt-1 h-5 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
+                            <path fill-rule="evenodd"
+                                d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold text-gray-900">Request Deletion</strong> You can request the
+                            deletion of your personal information under certain circumstances, such as if it is no
+                            longer necessary for the purposes for which it was collected.
+                        </span>
+                    </li>
+                </ul>
+                <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Changes to this Privacy Policy</h2>
+                <p class="mt-8">We reserve the right to modify this Privacy Policy at any time. Any changes will be
+                    effective immediately upon posting on our platform. We encourage you to review this Privacy Policy
+                    periodically for updates.
+                </p>
+                <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Contact Information</h2>
+                <p class="mt-8">For any questions or concerns regarding this Privacy Policy, please contact us at
+                    edufund@edu.
+                </p>
             </div>
         </div>
     </div>
 </div>
+
 
 <footer class="mt-32 sm:mt-40" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
