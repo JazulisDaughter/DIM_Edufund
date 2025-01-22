@@ -211,7 +211,18 @@
         </h2>
 
         <!-- Sign-up Form -->
-        <form action="#" method="POST" class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2">
+        @if ($errors->any())
+    <div>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+        <form action="{{ route('register') }}"
+            method="POST" class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2">
+            @csrf 
             <!-- First Name -->
             <div>
                 <label for="first_name" class="block text-sm font-medium text-gray-700">

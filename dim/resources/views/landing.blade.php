@@ -44,8 +44,8 @@
                             <!-- Search Button (Desktop) -->
                             <div class="hidden lg:block lg:max-w-md lg:flex-auto">
                                 <button type="button"
-                                    class="hidden h-8 w-full items-center gap-2 rounded-full bg-white pl-2 pr-3 text-sm text-zinc-500 ring-1 ring-zinc-900/10 transition hover:ring-zinc-900/20 lg:flex dark:bg-white/5 dark:text-zinc-400 dark:ring-inset dark:ring-white/10 dark:hover:ring-white/20">
-                                    <kbd class="ml-auto text-2xs text-zinc-400 dark:text-zinc-500">
+                                    class="hidden h-8 w-full items-center gap-2 rounded-full bg-white pl-2 pr-3 text-sm text-zinc-500 ring-1 ring-zinc-900/10 transition hover:ring-zinc-900/20 lg:flex">
+                                    <kbd class="ml-auto text-2xs text-zinc-400">
                                         <form class="group relative flex h-12">
                                             <svg class="pointer-events-none absolute left-3 top-0 h-full w-5 stroke-zinc-500"
                                                 viewBox="0 0 20 20" fill="none" aria-hidden="true">
@@ -53,7 +53,7 @@
                                                     d="M12.01 12a4.25 4.25 0 1 0-6.02-6 4.25 4.25 0 0 0 6.02 6Zm0 0 3.24 3.25" />
                                             </svg>
                                             <input
-                                                class="flex-auto bg-transparent pl-10 text-zinc-900 outline-none placeholder:text-zinc-500 sm:text-sm dark:text-white pr-4"
+                                                class="flex-auto bg-transparent pl-10 text-zinc-900 outline-none placeholder:text-zinc-500 sm:text-sm pr-4"
                                                 placeholder="Find something..." />
                                         </form>
                                 </button>
@@ -61,9 +61,9 @@
                             <!-- Search Button (Mobile) -->
                             <div class="lg:hidden">
                                 <button type="button"
-                                    class="flex h-6 w-6 items-center justify-center rounded-md transition hover:bg-zinc-900/5 dark:hover:bg-white/5"
+                                    class="flex h-6 w-6 items-center justify-center rounded-md transition hover:bg-zinc-900/5"
                                     aria-label="Find something...">
-                                    <svg class="h-5 w-5 stroke-zinc-900 dark:stroke-white" viewBox="0 0 20 20"
+                                    <svg class="h-5 w-5 stroke-zinc-900" viewBox="0 0 20 20"
                                         fill="none" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M12.01 12a4.25 4.25 0 1 0-6.02-6 4.25 4.25 0 0 0 6.02 6Zm0 0 3.24 3.25" />
@@ -76,7 +76,53 @@
                             <a href="/startfundraising"
                                 class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500">Start
                                 Fundraising</a>
-                            <a href="/signin" class="text-gray-600 hover:text-gray-900 pr-10">Sign in</a>
+                                @guest
+                                <a href="/signin" class="text-gray-600 hover:text-gray-900 pr-10">Sign in</a>
+                              @else
+                                <div class="relative inline-block text-left">
+                                    <button type="button" 
+                                      class="inline-flex justify-center items-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500" 
+                                      id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                      {{ Auth::user()->first_name }} {{ Auth::user()->last_name }}
+                                      <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                      </svg>
+                                    </button>
+                                  
+                                    <!-- Dropdown menu -->
+                                    <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" 
+    role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+    
+    <div class="py-1" role="none">
+        <!-- Account Settings Link -->
+        <a href="/profile" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabindex="-1">
+            Account settings
+        </a>
+
+        <!-- Logout Button -->
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button type="submit" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left" 
+                role="menuitem" tabindex="-1">
+                Sign out
+            </button>
+        </form>
+
+        <!-- Delete Account Button -->
+        <form method="POST" action="{{ route('profile.destroy') }}" 
+            onsubmit="return confirm('Are you sure you want to delete your account?');">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="block w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-red-100">
+                Delete Account
+            </button>
+        </form>
+    </div>
+</div>
+
+                                  </div>
+                              @endguest
+                            
                         </div>
                     </div>
                 </header>
@@ -333,6 +379,12 @@
 
         <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
+        <script> const dropdownButton = document.getElementById('menu-button');
+        const dropdownMenu = dropdownButton.nextElementSibling;
+        
+        dropdownButton.addEventListener('click', () => {
+          dropdownMenu.classList.toggle('hidden');
+        });</script>        
 </body>
 
 <section id="secondary-features" aria-label="Features for simplifying everyday business tasks"
@@ -800,7 +852,5 @@
         </div>
     </footer>
     </div>
-
-</html>
 
 </html>

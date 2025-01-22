@@ -1,14 +1,24 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\RegisteredUserController;
 
-Route::get('/', function () {
-    return view('welcome');
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 Route::get('/', function () {
     return view('landing', ['title' => 'Home Page']);
-});
+})->name('landing');
 
 Route::get('/home', function () {
     return view('home', ['title' => 'Home Page']);
@@ -58,3 +68,20 @@ Route::get('/tnc', function () {
     return view('tnc', ['title' => 'Terms and Condition Page']);
 });
 
+Route::get('/campaigndetails', function () {
+    return view('campaigndetails', ['title' => 'Detail Campaign']);
+});
+
+Route::middleware(['auth'])->group(function () {
+    Route::post('/account/delete', [RegisteredUserController::class, 'deleteAccount'])->name('account.delete');
+});
+
+Route::put('/update-password', [ProfileController::class, 'updatePassword'])->name('password.update');
+
+
+Route::get('/profile', function () {
+    return view('profile', ['title' => 'Profile']);
+});
+
+
+require __DIR__.'/auth.php';

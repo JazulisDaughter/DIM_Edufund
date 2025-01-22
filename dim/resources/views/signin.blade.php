@@ -160,7 +160,8 @@
         </h2>
 
         <!-- Sign-in Form -->
-        <form action="#" method="POST" class="mt-10 grid grid-cols-1 gap-y-8">
+        <form action="{{ route('login') }}" method="POST" class="mt-10 grid grid-cols-1 gap-y-8">
+            @csrf
             <!-- Email Address -->
             <div>
                 <label for="email" class="block text-sm font-medium text-gray-700">
